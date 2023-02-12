@@ -149,7 +149,7 @@
     <string name="longpress_to_clipboard">Long-press to copy</string>
 
     <!-- Hardware info -->
-    <string name="platform_revision">Platform</string>
+    <string name="soc_model">SoC Model</string>
     <string name="total_ram">Total RAM</string>
 
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
