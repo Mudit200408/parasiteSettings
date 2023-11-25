@@ -258,6 +258,14 @@
         android:order="-10"/>
 
     <Preference
+        android:key="clear_calling"
+        android:title="@string/clear_calling_title"
+        android:summary="@string/clear_calling_topintro"
+        android:fragment="com.google.android.settings.notification.ClearCallingSettings"
+        settings:controller="com.google.android.settings.notification.ClearCallingPreferenceController"
+        android:order="-55"/>
+
+    <Preference
         android:key="sound_work_settings"
         android:title="@string/sound_work_settings"
         android:fragment="com.android.settings.notification.SoundWorkSettings"
