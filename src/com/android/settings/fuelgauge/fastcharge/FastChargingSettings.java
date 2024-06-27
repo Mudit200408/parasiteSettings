@@ -187,7 +187,7 @@ public class FastChargingSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.PIXEL;
+        return MetricsProto.MetricsEvent.CUSTOM;
     }
 
     /**
