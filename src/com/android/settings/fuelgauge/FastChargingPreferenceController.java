@@ -21,10 +21,6 @@ import android.os.RemoteException;
 import android.util.Log;
 
 import androidx.preference.Preference;
-<<<<<<< HEAD
-import androidx.preference.SwitchPreferenceCompat;
-=======
->>>>>>> 9183a9c76db (Settings: Extend Fastcharge implementation [2/3])
 
 import com.android.settings.core.BasePreferenceController;
 
@@ -56,27 +52,6 @@ public class FastChargingPreferenceController extends BasePreferenceController {
         } catch (NoSuchElementException | RemoteException e) {
             if (DEBUG) Log.e(TAG, "Failed to get IFastCharge interface", e);
         }
-<<<<<<< HEAD
-
-        ((SwitchPreferenceCompat) preference).setChecked(fastChargingEnabled);
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final boolean shouldEnableFastCharging = (Boolean) newValue;
-
-        if (!mContext.getResources().getBoolean(R.bool.config_lineageFastChargeSupported)) return false;
-
-        try {
-            mFastCharge.setEnabled(shouldEnableFastCharging);
-            updateState(preference);
-        } catch (RemoteException e) {
-            Log.e(TAG, "setEnabled failed", e);
-        }
-
-        return false;
-=======
         return UNSUPPORTED_ON_DEVICE;
->>>>>>> 9183a9c76db (Settings: Extend Fastcharge implementation [2/3])
     }
 }
