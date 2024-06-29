@@ -61,7 +61,6 @@
     <string name="hardware_keys_long_tap_key_title">Long tap</string>
     <string name="hardware_keys_swipe_tap_title">Swipe action</string>
     <string name="hardware_keys_long_tap_title">Long tap action</string>
-    <string name="button_wake_title">Wake device</string>
     <string name="camera_sleep_on_release_title">Screen peek</string>
     <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
     <string name="camera_launch_title">Launch camera</string>
